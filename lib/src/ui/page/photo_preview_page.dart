@@ -129,8 +129,15 @@ class _PhotoPreviewPageState extends State<PhotoPreviewPage> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: config.options.themeColor,
-          leading: BackButton(
-            color: options.textColor,
+          leading: IconButton(
+            icon: Icon(
+              Icons.chevron_left,
+              color: options.textColor,
+              size: 30,
+            ),
+            onPressed: (){
+              Navigator.maybePop(context);
+            },
           ),
           title: StreamBuilder(
             stream: pageStream,
