@@ -213,7 +213,7 @@ const double _kEdgeSize = Checkbox.width;
 const Radius _kEdgeRadius = Radius.circular(1.0);
 const double _kStrokeWidth = 2.0;
 
-class _CheckboxPainter extends ToggleablePainter {
+class _RenderCheckbox extends ToggleablePainter {
   Color get checkColor => _checkColor;
   Color _checkColor;
   set checkColor(Color value) {
